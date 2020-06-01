@@ -1,0 +1,14 @@
+Usando typescript ao invés da javascrip
+1.  Configuração para uso do ts dentro do projeto server com express.
+    a.  durante a importação do express, um erro é apresentado pelo vscode, será necessário
+        a instalação do npm install @types/express para que a tipagem do código fique ativa
+    b.  não será possível executar o projeto apenas via npm start, é necessário instalar 
+        npm install ts-node -D e consequentemente o npm install typescript -da
+    c.  é necessário criar um arquivo de configuração do ts usando npx tsc --init
+    d.  para iniciar a api npx ts-node src/server.ts
+    e.  instalar com install ts-node-dev -D, mesmo que o nodemon
+    f.  alterar o arquivo package.json e colocar a linha de inicialização da api 
+        "dev": "ts-node-dev ./src/server.ts" 
+    g.  iniciar agora com npm run dev
+
+    
